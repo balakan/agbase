@@ -9,7 +9,7 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 
 > Nakon toga imaš root folder u browseru i URL /land za temu.
 
-Ako želiš instalirati laravel, bazu i autorizaciju...
+#### Ako želiš instalirati laravel, bazu i autorizaciju...
 
 `.env.example kopiraj u .env`
 
@@ -20,6 +20,7 @@ Ako želiš instalirati laravel, bazu i autorizaciju...
 - php artisan vendor:publish --tag="bouncer.migrations"
 - php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
 - php artisan make:auth
+- php artisan migrate
 
 ---
 
