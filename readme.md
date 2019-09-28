@@ -9,15 +9,13 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 
 > Nakon toga imaš root folder u browseru i URL /land za temu.
 
----
-
 Ako želiš instalirati laravel, bazu i autorizaciju...
 
 `.env.example kopiraj u .env`
 
 `Otvori bazu i u .env fajlu promjeni podatke za bazu.`
 
-U konzoli u root folderu izvesti komande (copy/paste):
+`U konzoli u root folderu izvesti komande (copy/paste):`
 
 - php artisan vendor:publish --tag="bouncer.migrations"
 - php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
@@ -25,15 +23,15 @@ U konzoli u root folderu izvesti komande (copy/paste):
 
 ---
 
-###Autentifikacija 
+##Autentifikacija
+
 [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer)
 
-###Lokalizacija
+##Lokalizacija
+
 [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 
----
-
-## Learning Laravel
+## Dodatna literatura
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
