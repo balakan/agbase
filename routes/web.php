@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+Route::view('/', 'landing');
+
+Route::match(['get', 'post'], '/dashboard', function(){
+    return view('dashboard');
 });
-Route::view('/land', 'landing');
 
 Auth::routes();
 

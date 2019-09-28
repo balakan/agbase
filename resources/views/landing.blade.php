@@ -18,7 +18,7 @@
                 <div class="content content-full text-center">
                     <div class="pt-100 pb-150">
                         <h1 class="font-w700 display-4 mt-20 invisible" data-toggle="appear" data-timeout="50">
-                            Codebase <span class="text-primary font-w300">3.1</span> <span class="font-w300">+ Laravel</span>
+                            AGbase <span class="text-primary font-w300">1.0</span> <span class="font-w300 font-size-h1 text-muted"> Laravel app</span>
                         </h1>
                         <h2 class="h3 font-w400 text-muted mb-50 invisible" data-toggle="appear" data-class="animated fadeInDown" data-timeout="300">
                             Welcome to the starter kit! Build something amazing!
@@ -28,6 +28,19 @@
                                 <i class="fa fa-fw fa-arrow-right mr-1"></i> Enter Dashboard
                             </a>
                         </div>
+                        @if (Route::has('login'))
+                            <div class="top-right links">
+                                @auth
+                                    <a href="{{ url('/home') }}">Home</a>
+                                @else
+                                    <a href="{{ route('login') }}">Login</a>
+
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}">Register</a>
+                                    @endif
+                                @endauth
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
