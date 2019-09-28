@@ -1,4 +1,5 @@
-## About AGbase
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+# About AGbase
 
 AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, autentifikacija, lokalizacija i debbuger. Za instalaciju je potrebno u konzoli u root folderu izvesti komande:
 
@@ -7,6 +8,8 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 - npm run dev
 
 Nakon toga imaš root folder u browseru i URL /land za temu.
+
+[.env.example kopiraj u .env]
 
 ## Learning Laravel
 
