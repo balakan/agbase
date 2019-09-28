@@ -1,4 +1,4 @@
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](public/media/aglogo.png "Logo Title Text 1")
 # About AGbase
 
 AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, autentifikacija, lokalizacija i debbuger. Za instalaciju je potrebno u konzoli u root folderu izvesti komande:
@@ -7,9 +7,31 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 - npm install
 - npm run dev
 
-Nakon toga imaš root folder u browseru i URL /land za temu.
+> Nakon toga imaš root folder u browseru i URL /land za temu.
 
-[.env.example kopiraj u .env]
+---
+
+Ako želiš instalirati laravel, bazu i autorizaciju...
+
+`.env.example kopiraj u .env`
+
+`Otvori bazu i u .env fajlu promjeni podatke za bazu.`
+
+U konzoli u root folderu izvesti komande (copy/paste):
+
+- php artisan vendor:publish --tag="bouncer.migrations"
+- php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
+- php artisan make:auth
+
+---
+
+###Autentifikacija 
+[JosephSilber/bouncer](https://github.com/JosephSilber/bouncer)
+
+###Lokalizacija
+[mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
+
+---
 
 ## Learning Laravel
 
@@ -20,4 +42,4 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 ## License
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The AGbase aplication is private software licensed under the [MIT license](https://opensource.org/licenses/MIT).
