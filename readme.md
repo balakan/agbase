@@ -23,11 +23,11 @@ Ako želiš instalirati laravel, bazu i autorizaciju...
 
 ---
 
-##Autentifikacija
+## Autentifikacija
 
 [JosephSilber/bouncer](https://github.com/JosephSilber/bouncer)
 
-##Lokalizacija
+## Lokalizacija
 
 [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 
