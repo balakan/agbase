@@ -3,16 +3,17 @@
 
 AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, autentifikacija, lokalizacija i debbuger. Za instalaciju je potrebno u konzoli u root folderu izvesti komande:
 
+### Osnovna instalacija...
+
 - composer install
 - npm install
 - npm run dev
 
-> Nakon toga imaš root folder u browseru. Pripremljene su osnovne rute.
+`Treba još srediti login, register... Blade views...`
 
-`Treba srediti login, register... views.`
+> Nakon ovih akcija AGbase aplikacija bi trebala biti podešena sa osnovim rutama i temom.
 
 ### Instaliracija migracija, baze i autorizacije...
-`Treba još srediti polja u nekim tablicama.`
 
 - .env.example kopiraj u .env
 - Otvori bazu i u .env fajlu promjeni podatke za bazu.
@@ -24,7 +25,11 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 - php artisan make:auth
 - php artisan migrate
 
-> Nakon ovih akcija AGbase aplikacija bi trebala biti spremna za rad. Sa osnovim rutama, temom, dashboardom i autorizacijom...
+`Treba još srediti polja u nekim tablicama.`
+
+> Nakon ovih akcija AGbase aplikacija bi trebala biti spremna za rad. 
+> Sa osnovim rutama, temom, dashboardom i autorizacijom...
+> I nekim simple Page Builderom i Editorom,
 
 ---
 
