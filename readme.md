@@ -7,20 +7,24 @@ AGbase je starter kit za aplikacije. Laravel baza, pripremljena Codebase tema, a
 - npm install
 - npm run dev
 
-> Nakon toga imaš root folder u browseru i URL /land za temu.
+> Nakon toga imaš root folder u browseru. Pripremljene su osnovne rute.
 
-#### Ako želiš instalirati laravel, bazu i autorizaciju...
+`Treba srediti login, register... views.`
 
-`.env.example kopiraj u .env`
+### Instaliracija migracija, baze i autorizacije...
+`Treba još srediti polja u nekim tablicama.`
 
-`Otvori bazu i u .env fajlu promjeni podatke za bazu.`
+- .env.example kopiraj u .env
+- Otvori bazu i u .env fajlu promjeni podatke za bazu.
 
-`U konzoli u root folderu izvesti komande (copy/paste):`
+#### U konzoli u root folderu pokreni komande. (copy/paste):
 
 - php artisan vendor:publish --tag="bouncer.migrations"
 - php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
 - php artisan make:auth
 - php artisan migrate
+
+> Nakon ovih akcija AGbase aplikacija bi trebala biti spremna za rad. Sa osnovim rutama, temom, dashboardom i autorizacijom...
 
 ---
 
