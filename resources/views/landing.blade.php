@@ -24,19 +24,19 @@
                             Welcome to the starter kit! Build something amazing!
                         </h2>
                         <div class="invisible" data-toggle="appear" data-class="animated fadeInDown" data-timeout="300">
-                            <a class="btn btn-hero btn-noborder btn-success min-width-175 mb-10 mx-5" href="/dashboard">
+                            <a class="btn btn-hero btn-noborder btn-success min-width-175 mb-10 mx-5" href="{{ route('dashboard') }}">
                                 <i class="fa fa-fw fa-arrow-right mr-1"></i> Enter Dashboard
                             </a>
                         </div>
                         @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
-                                    <a href="{{ url('/home') }}">Home</a>
+                                    <a href="{{ url('/home') }}" class="btn btn-rounded btn-noborder btn-secondary min-width-125">Home</a>
                                 @else
-                                    <a href="{{ route('login') }}">Login</a>
+                                    <a href="{{ route('login') }}" class="btn btn-rounded btn-noborder btn-secondary min-width-125">Login</a>
 
                                     @if (Route::has('register'))
-                                        <a href="{{ route('register') }}">Register</a>
+                                        <a href="{{ route('register') }}" class="btn btn-rounded btn-noborder btn-secondary min-width-125">Register</a>
                                     @endif
                                 @endauth
                             </div>
